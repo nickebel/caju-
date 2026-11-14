@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f4d3a">
+  <meta name="description" content="Saladas tropicais artesanais em São Miguel dos Campos, AL. Ingredientes frescos, combinações especiais e molhos da casa.">
+  <title>Cajuí — Sua pausa mais fresca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> SALADAS FRESCAS • SÃO MIGUEL DOS CAMPOS, AL <span class="announcement-right">Delivery e retirada</span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Cajuí, início">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 39C8 31 9 14 28 8c4 13 2 23-4 31Z"/><path d="M23 38c1-11 6-18 15-23"/><path d="M24 38c-4-8-9-12-16-13"/></svg></span>
+      <span class="brand-word">cajuí<span>.</span><small>SALADAS TROPICAIS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#cardapio">Cardápio</a><a href="#monte">Monte seu bowl</a><a href="#sobre">Nossa essência</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Abrir carrinho"><span class="cart-icon">♧</span><span class="cart-label">Seu pedido</span><span class="cart-count" id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✳</span> FRESCOR COM SABOR DE VERDADE</div>
+        <h1>Sua pausa<br>mais <em>fresca.</em></h1>
+        <p>Saladas tropicais, ingredientes de verdade e molhos artesanais para deixar seu dia mais gostoso.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#cardapio">Explorar cardápio <span>↗</span></a><a class="text-link" href="#sobre">Conheça a Cajuí <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-avatars"><i>🥭</i><i>🥬</i><i>🍍</i></span><span>Colorido no prato.<br><b>Leveza no seu dia.</b></span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo" role="img" aria-label="Bowl colorido com folhas, legumes e frutas frescas"></div>
+        <div class="photo-sticker"><span>feito com</span><b>carinho<br>e frescor</b><small>✳</small></div>
+        <div class="hero-caption"><span>01 / 06</span><span>UM MUNDO DE SABORES NATURAIS</span></div>
+      </div>
+      <span class="sun-doodle" aria-hidden="true">✳</span>
+    </section>
+    <section class="strip" aria-label="Diferenciais"><div>✳ INGREDIENTES FRESCOS</div><div>✳ MOLHOS DA CASA</div><div>✳ FEITO NA HORA</div><div>✳ OPÇÕES VEGANAS</div></section>
+    <section class="menu-section section-wrap" id="cardapio">
+      <div class="section-heading">
+        <div><div class="eyebrow">ESCOLHA SEU MOMENTO</div><h2>Um bowl de cada<br><em>vez melhor.</em></h2></div>
+        <p>Combinações que surpreendem, preparadas com cuidado e um toque tropical. Qual vai ser a sua?</p>
+      </div>
+      <div class="menu-toolbar"><div class="filters" role="group" aria-label="Filtrar saladas"><button class="filter active" data-filter="all">Todas <span>06</span></button><button class="filter" data-filter="protein">Com proteína</button><button class="filter" data-filter="vegan">Veganas</button></div><span class="menu-caption">PREPARADAS COM INGREDIENTES FRESCOS</span></div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="protein" data-id="sol" data-name="Sol do Litoral" data-price="34.90">
+          <div class="product-image image-sol"><span class="product-tag">Queridinha da casa</span><button class="quick-add" aria-label="Adicionar Sol do Litoral">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Sol do Litoral</h3><b>R$ 34,90</b></div><p>Frango grelhado, manga, quinoa e castanha de caju. Um encontro de frescor e crocância.</p><div class="product-meta"><span>405 g aprox.</span><span>Molho de maracujá</span></div><button class="add-link" data-add="sol">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="protein" data-id="mare" data-name="Maré Dourada" data-price="37.90">
+          <div class="product-image image-mare"><span class="product-tag">Especial da casa</span><button class="quick-add" aria-label="Adicionar Maré Dourada">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Maré Dourada</h3><b>R$ 37,90</b></div><p>Camarões, abacaxi, abacate e quinoa. Uma combinação marcante e tropical.</p><div class="product-meta"><span>380 g aprox.</span><span>Limão com ervas</span></div><button class="add-link" data-add="mare">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="protein" data-id="brisa" data-name="Brisa do Porto" data-price="32.90">
+          <div class="product-image image-brisa"><button class="quick-add" aria-label="Adicionar Brisa do Porto">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Brisa do Porto</h3><b>R$ 32,90</b></div><p>Atum, grão-de-bico, batata-doce e vegetais fresquinhos.</p><div class="product-meta"><span>405 g aprox.</span><span>Limão com ervas</span></div><button class="add-link" data-add="brisa">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="protein" data-id="coalho" data-name="Coalho Dourado" data-price="32.90">
+          <div class="product-image image-coalho"><button class="quick-add" aria-label="Adicionar Coalho Dourado">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Coalho Dourado</h3><b>R$ 32,90</b></div><p>Queijo coalho grelhado, banana-da-terra e abacaxi. Nordeste em cada garfada.</p><div class="product-meta"><span>365 g aprox.</span><span>Abacaxi com hortelã</span></div><button class="add-link" data-add="coalho">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="vegan" data-id="porao" data-name="Pôr do Sol" data-price="29.90">
+          <div class="product-image image-porao"><span class="product-tag vegan-tag">100% vegetal</span><button class="quick-add" aria-label="Adicionar Pôr do Sol">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Pôr do Sol</h3><b>R$ 29,90</b></div><p>Manga, abacate, grão-de-bico e sementes. Cremosa, crocante e cheia de cor.</p><div class="product-meta"><span>377 g aprox.</span><span>Manga com gengibre</span></div><button class="add-link" data-add="porao">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="vegan" data-id="raiz" data-name="Raiz Tropical" data-price="28.90">
+          <div class="product-image image-raiz"><span class="product-tag vegan-tag">100% vegetal</span><button class="quick-add" aria-label="Adicionar Raiz Tropical">+</button></div>
+          <div class="product-info"><div class="product-title-row"><h3>Raiz Tropical</h3><b>R$ 28,90</b></div><p>Batata-doce assada, feijão-preto e folhas frescas. Sabor caseiro com toque tropical.</p><div class="product-meta"><span>368 g aprox.</span><span>Limão com ervas</span></div><button class="add-link" data-add="raiz">Adicionar ao pedido <span>＋</span></button></div>
+        </article>
+      </div>
+      <p class="menu-footnote">* Pesos aproximados. Molhos enviados separadamente. Consulte disponibilidade dos ingredientes no dia.</p>
+    </section>
+    <section class="custom-section" id="monte">
+      <div class="custom-image" role="img" aria-label="Ingredientes frescos para montar uma salada"></div>
+      <div class="custom-copy"><div class="eyebrow">DO SEU JEITO</div><h2>Você escolhe.<br><em>A gente mistura.</em></h2><p>Crie uma combinação com a sua cara: escolha uma base, adicione seus ingredientes favoritos e finalize com um molho da casa.</p><div class="custom-price"><span>A partir de</span><b>R$ 22,90</b></div><button class="button button-light" id="open-builder">Montar meu bowl <span>↗</span></button><small>Uma base + 3 complementos + 1 crocante + 1 molho.</small></div>
+    </section>
+    <section class="sauces section-wrap">
+      <div class="section-heading compact"><div><div class="eyebrow">O TOQUE FINAL</div><h2>Molhos com<br><em>personalidade.</em></h2></div><p>Receitas artesanais inspiradas nos sabores tropicais. O molho vai separado para sua salada chegar fresquinha.</p></div>
+      <div class="sauce-list"><div><span class="sauce-number">01</span><b>Sol de Maracujá</b><span>Doce, cítrico e levemente ácido</span><i>🥭</i></div><div><span class="sauce-number">02</span><b>Manga com Gengibre</b><span>Frutado com um toque picante</span><i>🌼</i></div><div><span class="sauce-number">03</span><b>Abacaxi com Hortelã</b><span>Leve, fresco e aromático</span><i>🍍</i></div><div><span class="sauce-number">04</span><b>Limão com Ervas</b><span>Cítrico e cheio de frescor</span><i>🌿</i></div></div>
+    </section>
+    <section class="brand-story" id="sobre"><div class="story-mark">✳</div><div class="eyebrow">UM POUCO DA NOSSA ESSÊNCIA</div><h2>Mais cor no prato.<br><em>Mais sabor no caminho.</em></h2><p>A Cajuí nasceu da vontade de transformar uma refeição do dia a dia em um momento gostoso. Valorizamos ingredientes frescos, combinações criativas e o cuidado em cada preparo.</p><span class="signature">Com carinho, Cajuí ♡</span></section>
+    <section class="closing-cta"><div><div class="eyebrow">SEU PRÓXIMO ALMOÇO ESTÁ AQUI</div><h2>Deu vontade de<br><em>comer colorido?</em></h2></div><button class="button button-dark" id="footer-order">Faça seu pedido <span>↗</span></button></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><svg viewBox="0 0 48 48"><path d="M24 39C8 31 9 14 28 8c4 13 2 23-4 31Z"/><path d="M23 38c1-11 6-18 15-23"/><path d="M24 38c-4-8-9-12-16-13"/></svg></span><span class="brand-word">cajuí<span>.</span><small>SALADAS TROPICAIS</small></span></a><div class="footer-info">São Miguel dos Campos · Alagoas<br>Delivery e retirada no local</div><div class="footer-links"><a href="#cardapio">Cardápio</a><a href="#monte">Monte seu bowl</a><a href="#inicio">Voltar ao topo ↑</a></div><div class="copyright">© <span id="year"></span> Cajuí. Feito com frescor.</div></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Seu pedido" aria-hidden="true">
+    <div class="panel-header"><div><div class="eyebrow">QUASE LÁ</div><h2>Seu pedido<span>.</span></h2></div><button class="icon-close" id="close-cart" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cart-items"><div class="empty-cart"><span>🥗</span><b>Seu carrinho está fresquinho… e vazio.</b><p>Escolha uma salada para começar.</p><button class="text-link" id="back-menu">Ver cardápio ↗</button></div></div>
+    <div class="cart-bottom" id="cart-bottom" hidden><div class="cart-total"><span>Subtotal</span><b id="cart-total">R$ 0,00</b></div><p class="delivery-note">Entrega ou retirada e taxa serão confirmadas no atendimento.</p><button class="button button-dark full-button" id="checkout">Continuar pelo WhatsApp <span>↗</span></button></div>
+  </aside>
+  <section class="modal" id="builder-modal" role="dialog" aria-modal="true" aria-labelledby="builder-title" aria-hidden="true">
+    <div class="modal-head"><div><div class="eyebrow">CRIE SUA COMBINAÇÃO</div><h2 id="builder-title">Monte seu bowl<span>.</span></h2></div><button class="icon-close" id="close-builder" aria-label="Fechar">×</button></div>
+    <div class="builder-content">
+      <label>1. Escolha sua base<select id="builder-base"><option value="Mix de folhas">Mix de folhas</option><option value="Alface e rúcula">Alface e rúcula</option><option value="Quinoa cozida">Quinoa cozida</option><option value="Mix de folhas e grãos">Mix de folhas e grãos</option></select></label>
+      <fieldset><legend>2. Escolha até três complementos</legend><div class="choice-grid" id="builder-complements"><label><input type="checkbox" value="Manga"> Manga</label><label><input type="checkbox" value="Abacaxi"> Abacaxi</label><label><input type="checkbox" value="Abacate"> Abacate</label><label><input type="checkbox" value="Tomate"> Tomate</label><label><input type="checkbox" value="Pepino"> Pepino</label><label><input type="checkbox" value="Cenoura"> Cenoura</label><label><input type="checkbox" value="Beterraba"> Beterraba</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Banana-da-terra"> Banana-da-terra</label><label><input type="checkbox" value="Repolho-roxo"> Repolho-roxo</label></div><small>O valor base inclui até três complementos.</small></fieldset>
+      <label>3. Proteína adicional<select id="builder-protein"><option value="Nenhuma|0">Sem proteína adicional</option><option value="Frango grelhado|7">Frango grelhado (+ R$ 7,00)</option><option value="Atum|8">Atum (+ R$ 8,00)</option><option value="Queijo coalho|7">Queijo coalho (+ R$ 7,00)</option><option value="Camarão|12">Camarão (+ R$ 12,00)</option><option value="Grão-de-bico|4">Grão-de-bico (+ R$ 4,00)</option><option value="Tofu|6">Tofu (+ R$ 6,00)</option></select></label>
+      <label>4. Crocante<select id="builder-crunch"><option>Castanha de caju</option><option>Sementes de abóbora</option><option>Gergelim</option><option>Croutons</option><option>Chips de batata-doce</option></select></label>
+      <label>5. Molho<select id="builder-sauce"><option>Sol de Maracujá</option><option>Manga com Gengibre</option><option>Abacaxi com Hortelã</option><option>Limão com Ervas</option></select></label>
+    </div>
+    <div class="builder-footer"><div><span>Seu bowl</span><b id="builder-price">R$ 22,90</b></div><button class="button button-dark" id="add-custom">Adicionar ao pedido <span>＋</span></button></div>
+  </section>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
